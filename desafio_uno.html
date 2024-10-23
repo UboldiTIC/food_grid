@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Grid/Gap</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: 100px 100px 100px;
+            grid-template-columns: 100px 100px;
+            grid-auto-flow: column;
+            gap: 20px;
+            padding: 6px;
+        }
+        .container div {
+            display: flex;
+            align-items: flex-end;
+            justify-content: right;
+            width: 100px;
+            height: 100px;
+            border: none;
+            font-family: sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+        .container div:nth-child(1),
+        .container div:nth-child(4)  {
+            background-color: #ACDC3F;
+        }
+        .container div:nth-child(2),
+        .container div:nth-child(5)  {
+            background-color: #71BF34;
+        }
+        .container div:nth-child(3),
+        .container div:nth-child(6)  {
+            background-color: #27861F;
+        }
+        .element .element-one,
+        .element .element-two,
+        .element .element-four,
+        .element .element-five {
+            width: 25px;
+            height: 35px;
+            padding: 4px;
+            background-color: #278520;
+        }
+        .element .element-three,
+        .element .element-six {
+            width: 25px;
+            height: 35px;
+            padding: 4px;
+            background-color: #143B0A;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="element">
+            <p  class="element-one">1</p>        
+        </div>
+        <div class="element">
+            <p class="element-two">2</p>        
+        </div>
+        <div class="element">
+            <p class="element-three">3</p>        
+        </div>
+        <div class="element">
+            <p class="element-four">4</p>        
+        </div>
+        <div class="element">
+            <p class="element-five">5</p>        
+        </div>
+        <div class="element">
+            <p class="element-six">6</p>        
+        </div> 
+    </div>
+</body>
+</html>
