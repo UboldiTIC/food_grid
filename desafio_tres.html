@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Tres</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            place-content: center;
+        }
+        .container {
+            display: grid; 
+            place-self: center;
+            grid-template-columns: 150px 150px 150px;
+            grid-auto-rows: 150px;
+            border: none;
+        }
+        .element {
+            border: none;
+        }
+        .element-one,
+        .element-four,
+        .element-five  {
+            background-color: #cbee39;
+        }
+        .element-two {
+            background-color: #70bc04;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .element-three {
+            background-color: #258300;
+            grid-area: 2/1/2/3;
+        }
+        .element-six {
+            background-color: #70bc04;
+        }
+        .element-seven {
+            background-color: #258300;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="element element-one"></div>
+        <div class="element element-two"></div>
+        <div class="element element-three"></div>
+        <div class="element element-four"></div>
+        <div class="element element-five"></div>
+        <div class="element element-six"></div>
+        <div class="element element-seven"></div>
+    </div>
+</body>
+</html>
