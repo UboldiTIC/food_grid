@@ -29,8 +29,8 @@ main {
   
   .info-title {
     color: #333;
-    font-size: 4rem;
-    font-weight: 900;
+    font-size: 3rem;
+    font-weight: bolder;
     margin-bottom: 24px;
   }
   
@@ -59,7 +59,7 @@ main {
 }
 .dishes-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(150px, 200px));
+    grid-template-columns: repeat(auto-fit, minmax(75px, 200px));
     grid-auto-rows: 1fr;
     gap: 25px;
     justify-content: center;
@@ -87,7 +87,7 @@ main {
     display: grid;
     gap: 25px;
     justify-content: center;
-    grid-template-columns: repeat(5, minmax(100px, 250px));
+    grid-template-columns: repeat(auto-fit, 150px);
 }
 .menu-grid-item {
     background-color: coral;
@@ -101,7 +101,8 @@ main {
 }
 @media screen and (max-width: 768px) {
     .hero {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(300px, 500px);
+    justify-content: center;
     padding-bottom: 50px;
   }
   .hero-image{
@@ -111,6 +112,9 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
     grid-template-rows: repeat(2, minmax(135px, 1fr));
     grid-gap: 25px;
+  }
+  .dishes-grid {
+    grid-template-columns: repeat(auto-fit, minmax(75px, 100px));
   }
     
 }
